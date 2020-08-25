@@ -13,14 +13,14 @@ function tabla(numero){
      document.querySelector('#contenidoTablas').innerHTML += `
 
         <div id="${tablaID}" class="tabla">
-            <h3>X  ${numero}</h3>
+            <h1>X  ${numero}</h1>
             <ul id='${multi}' class="multiplicacion">
             </ul>
         </div>
 
       `
      for(let i=1; i<=12; i++){
-          document.querySelector(multiID).innerHTML += ` <li >${numero} x ${i} = ${i*numero} </li> `
+          document.querySelector(multiID).innerHTML += ` <li >${numero} x ${i} = <span>${i*numero}</span> </li> `
        }
 }
 
