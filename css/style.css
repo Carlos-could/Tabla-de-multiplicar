@@ -1,4 +1,56 @@
-table {
-  background-color: red;
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+.contenidoTablas{
+  max-width: 1200px;
+  width: 95%;
   margin: 0 auto;
+}
+
+.tabla{
+  margin: 3rem 1rem;
+  text-align: center;
+  border: 1px solid gray;
+  background-color: salmon;
+  font-size: 2.4rem;
+}
+.tabla h3{
+  padding: 3rem 0;
+  margin-bottom: 0;
+}
+
+.multiplicacion{
+  padding: 0;
+}
+
+.multiplicacion li{
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .contenidoTablas{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .tabla{
+    flex-basis: calc(50% - 6rem);
+  }
+}
+
+@media (min-width: 992px) {
+  .tabla{
+    flex-basis: calc(33.3% - 6rem);
+  }
 }
